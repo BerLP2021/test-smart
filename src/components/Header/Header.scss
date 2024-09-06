@@ -1,0 +1,46 @@
+.header {
+    height: 100px;
+    background-color: rgb(213, 207, 207);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: -7px 7px 14px #b5b5b5,
+        7px -7px 14px #ffffff;
+
+    &__logo {
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        margin-block: auto;
+        flex: 1 0;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: flex-end;
+
+        &_item {
+            color: #333;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            text-shadow: 0 3px 5px rgba(255 255 255 / 0.4);
+
+            @media (hover: hover) {
+                &:hover {
+                    color: #fff;
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+}

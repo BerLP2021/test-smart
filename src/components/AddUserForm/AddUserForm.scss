@@ -1,0 +1,56 @@
+.add-user {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+        font-size: 16px;
+    }
+
+    &__label {
+        font-weight: bold;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        border-radius: 5px;
+    }
+
+    &__btns_wrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    &__btn {
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        transition: box-shadow 0.3s ease;
+
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+        }
+    }
+}

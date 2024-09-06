@@ -1,0 +1,67 @@
+.main-page {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 70%;
+
+        &:not(:last-of-type) {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &__title {
+        font-size: 32px;
+        text-align: center;
+
+        &_secondary {
+            font-size: 24px;
+        }
+    }
+
+    &__description {
+        font-size: 18px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__link {
+        display: block;
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        transition: box-shadow 0.3s ease;
+        font-size: 16px;
+        text-align: center;
+
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+        }
+
+        &_primary {
+            font-size: 24px;
+            background-color: coral;
+            padding: 10px 20px;
+        }
+    }
+
+
+}

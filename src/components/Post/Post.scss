@@ -1,0 +1,85 @@
+.post {
+    &__wrapper {
+        width: 70%;
+    }
+
+    &__title_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__title {
+        font-size: 24px;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__image_wrapper {
+        float: right;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    &__image_img {
+        border-radius: 8px;
+        background: #e0e0e0;
+        box-shadow: 21px 21px 41px #bebebe,
+            -21px -21px 41px #ffffff;
+    }
+
+    &__author {
+        flex: 0 1;
+        font-size: 14px;
+        font-style: italic;
+        text-decoration: underline;
+        margin-right: 20px;
+
+        &_title {
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: end;
+
+            &>h3 {
+                display: inline;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 50px;
+        font-size: 16px;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__button {
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        transition: box-shadow 0.3s ease;
+        font-size: 16px;
+
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.about-me {
+    &__wrapper {
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+
+        &_main {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &_link {
+            color: coral;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+
+        &_item {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #007bff;
+            }
+        }
+    }
+}

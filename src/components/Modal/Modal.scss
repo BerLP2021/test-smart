@@ -1,0 +1,17 @@
+.modal__wrapper {
+    width: 400px;
+    min-height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    padding: 0;
+
+    .inner {
+        border-radius: 10px;
+        height: 100%;
+        padding: 40px;
+        border: 1px solid rgb(12 12 12);
+    }
+}

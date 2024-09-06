@@ -1,0 +1,72 @@
+.title {
+    text-align: center;
+    font-size: 24px;
+
+    &_main {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th,
+    td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th::first-letter {
+        text-transform: uppercase;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    &__addUser,
+    &__removeUser {
+        background-color: transparent;
+        padding-inline: 10px;
+        border: none;
+        font-size: 48px;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 0 13px;
+        outline: none;
+        will-change: transform;
+        transition: text-shadow 0.3s ease, scale 0.2s ease;
+
+        @media (hover: hover) {
+            &:hover {
+                text-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+                scale: 1.2
+            }
+        }
+
+        &:active {
+            text-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+            scale: 1.2
+        }
+
+        &:focus-visible {
+            text-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+            scale: 1.3
+        }
+    }
+
+    &__removeUser {
+        color: red;
+    }
+
+    &__addUser {
+        color: green;
+        rotate: 45deg;
+    }
+}
