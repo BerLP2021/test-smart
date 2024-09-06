@@ -2,8 +2,10 @@ import React from 'react'
 
 import Posts from '../components/Posts/Posts';
 
-export default function UsersPosts() {
+const UsersPosts: React.FC = () => {
     return (
         <Posts />
     )
 }
+
+export default UsersPosts;

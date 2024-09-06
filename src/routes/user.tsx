@@ -1,8 +1,10 @@
 import React from 'react'
 import UserProfile from '../components/USerProfile/UserProfile'
 
-export default function User() {
+const User: React.FC = () => {
     return (
         <UserProfile />
     )
 }
+
+export default User;
